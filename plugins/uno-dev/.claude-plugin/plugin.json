@@ -6,7 +6,7 @@
     "name": "Daniel",
     "url": "https://github.com/AIRoutine"
   },
-  "repository": "https://github.com/AIRoutine/at-claude-plugins",
+  "repository": "https://github.com/AIRoutine/ClaudePlugins",
   "license": "MIT",
   "keywords": ["uno-platform", "xaml", "dotnet", "cross-platform", "mvux", "winui"],
   "skills": "./skills/"

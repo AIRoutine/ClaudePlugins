@@ -7,7 +7,7 @@ Personal Claude Code plugin marketplace with shared skills and configurations.
 Add this marketplace to your Claude Code:
 
 ```bash
-/plugin marketplace add AIRoutine/at-claude-plugins
+/plugin marketplace add AIRoutine/ClaudePlugins
 ```
 
 Then install plugins:
@@ -30,7 +30,7 @@ Then install plugins:
 ## Structure
 
 ```
-at-claude-plugins/
+ClaudePlugins/
 ├── .claude-plugin/
 │   └── marketplace.json        # Marketplace configuration
 ├── plugins/
