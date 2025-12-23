@@ -1,0 +1,60 @@
+# Claude Plugins Marketplace
+
+Personal Claude Code plugin marketplace with shared skills and configurations.
+
+## Installation
+
+Add this marketplace to your Claude Code:
+
+```bash
+/plugin marketplace add Daniel/claude-plugins
+```
+
+Then install plugins:
+
+```bash
+/plugin install uno-dev
+```
+
+## Available Plugins
+
+### uno-dev
+Uno Platform development skills for cross-platform .NET apps.
+
+**Skills included:**
+- `uno-development` - XAML, MVUX, Material theming, responsive layouts
+
+## Structure
+
+```
+claude-plugins/
+├── .claude-plugin/
+│   └── marketplace.json        # Marketplace configuration
+├── plugins/
+│   └── uno-dev/
+│       ├── .claude-plugin/
+│       │   └── plugin.json     # Plugin configuration
+│       └── skills/
+│           └── uno-development/
+│               └── SKILL.md    # Skill definition
+├── settings-templates/
+│   └── settings.json           # Example settings for projects
+└── README.md
+```
+
+## Settings Templates
+
+Copy settings from `settings-templates/` to your project's `.claude/settings.json` as needed.
+
+## Adding New Skills
+
+1. Create a new folder under `plugins/<plugin-name>/skills/<skill-name>/`
+2. Add a `SKILL.md` with YAML frontmatter
+3. Commit and push
+
+## Adding New Plugins
+
+1. Create folder `plugins/<plugin-name>/.claude-plugin/plugin.json`
+2. Create skills under `plugins/<plugin-name>/skills/`
+3. Add plugin name to marketplace.json `plugins` array
+4. Commit and push

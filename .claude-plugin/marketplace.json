@@ -1,0 +1,9 @@
+{
+  "name": "daniel-claude-marketplace",
+  "description": "Personal Claude Code plugin marketplace with shared skills and configurations",
+  "version": "1.0.0",
+  "author": "Daniel",
+  "plugins": [
+    "uno-dev"
+  ]
+}
