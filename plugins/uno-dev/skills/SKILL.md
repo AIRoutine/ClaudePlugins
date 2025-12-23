@@ -1,5 +1,5 @@
 ---
-name: uno-development
+name: uno-dev
 description: Use this skill when developing Uno Platform cross-platform apps, creating XAML UI, implementing MVUX patterns, configuring Material themes, or working with .NET MAUI embedding. Activates for tasks involving WinUI, responsive layouts, platform-specific code, or Uno Toolkit controls.
 allowed-tools: Read, Write, Edit, Grep, Glob, Bash
 ---

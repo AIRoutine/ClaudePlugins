@@ -22,11 +22,6 @@ Then install plugins:
 |--------|-------------|----------|
 | [uno-dev](plugins/uno-dev) | Uno Platform development skills for cross-platform .NET apps | `uno-platform`, `xaml`, `dotnet`, `cross-platform`, `mvux`, `winui` |
 
-### uno-dev
-
-**Skills included:**
-- `uno-development` - XAML, MVUX, Material theming, responsive layouts
-
 ## Structure
 
 ```
@@ -38,8 +33,7 @@ ClaudePlugins/
 │       ├── .claude-plugin/
 │       │   └── plugin.json     # Plugin configuration
 │       └── skills/
-│           └── uno-development/
-│               └── SKILL.md    # Skill definition
+│           └── SKILL.md        # Skill definition
 ├── settings-templates/
 │   └── settings.json           # Example settings for projects
 └── README.md
