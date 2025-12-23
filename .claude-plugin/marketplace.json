@@ -2,8 +2,12 @@
   "name": "daniel-claude-marketplace",
   "description": "Personal Claude Code plugin marketplace with shared skills and configurations",
   "version": "1.0.0",
-  "author": "Daniel",
+  "author": "AT",
+  "owner": "AIRoutine",
   "plugins": [
-    "uno-dev"
+    {
+      "name": "uno-dev",
+      "path": "plugins/uno-dev"
+    }
   ]
 }
