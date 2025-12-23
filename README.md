@@ -7,7 +7,7 @@ Personal Claude Code plugin marketplace with shared skills and configurations.
 Add this marketplace to your Claude Code:
 
 ```bash
-/plugin marketplace add Daniel/claude-plugins
+/plugin marketplace add AIRoutine/at-claude-plugins
 ```
 
 Then install plugins:
@@ -18,8 +18,11 @@ Then install plugins:
 
 ## Available Plugins
 
+| Plugin | Description | Keywords |
+|--------|-------------|----------|
+| [uno-dev](plugins/uno-dev) | Uno Platform development skills for cross-platform .NET apps | `uno-platform`, `xaml`, `dotnet`, `cross-platform`, `mvux`, `winui` |
+
 ### uno-dev
-Uno Platform development skills for cross-platform .NET apps.
 
 **Skills included:**
 - `uno-development` - XAML, MVUX, Material theming, responsive layouts
@@ -27,7 +30,7 @@ Uno Platform development skills for cross-platform .NET apps.
 ## Structure
 
 ```
-claude-plugins/
+at-claude-plugins/
 ├── .claude-plugin/
 │   └── marketplace.json        # Marketplace configuration
 ├── plugins/
@@ -56,5 +59,9 @@ Copy settings from `settings-templates/` to your project's `.claude/settings.jso
 
 1. Create folder `plugins/<plugin-name>/.claude-plugin/plugin.json`
 2. Create skills under `plugins/<plugin-name>/skills/`
-3. Add plugin name to marketplace.json `plugins` array
+3. Add plugin to `marketplace.json` `plugins` array with `name`, `path`, and `description`
 4. Commit and push
+
+## License
+
+MIT
