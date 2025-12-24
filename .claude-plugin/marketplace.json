@@ -2,15 +2,13 @@
   "name": "daniel-claude-marketplace",
   "description": "Personal Claude Code plugin marketplace with shared skills and configurations",
   "version": "1.0.0",
-  "author": {
-    "name": "Daniel",
-    "url": "https://github.com/AIRoutine"
+  "owner": {
+    "name": "Daniel"
   },
-  "repository": "AIRoutine/ClaudePlugins",
   "plugins": [
     {
       "name": "uno-dev",
-      "path": "plugins/uno-dev",
+      "source": "./plugins/uno-dev",
       "description": "Uno Platform development skills for cross-platform .NET apps"
     }
   ]
