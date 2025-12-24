@@ -8,6 +8,5 @@
   },
   "repository": "https://github.com/AIRoutine/ClaudePlugins",
   "license": "MIT",
-  "keywords": ["uno-platform", "xaml", "dotnet", "cross-platform", "mvux", "winui"],
-  "skills": "./skills/"
+  "keywords": ["uno-platform", "xaml", "dotnet", "cross-platform", "mvux", "winui"]
 }
