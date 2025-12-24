@@ -6,7 +6,7 @@
     "name": "Daniel",
     "url": "https://github.com/AIRoutine"
   },
-  "repository": "https://github.com/AIRoutine/ClaudePlugins",
+  "repository": "AIRoutine/ClaudePlugins",
   "plugins": [
     {
       "name": "uno-dev",
