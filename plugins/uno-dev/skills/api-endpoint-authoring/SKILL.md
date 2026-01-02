@@ -103,3 +103,25 @@ public record PriceChangedEvent(string Symbol, decimal Price) : IEvent;
 app.MapGet("/subscribe", ([FromServices] IMediator mediator, [FromServices] IHttpContextAccessor context)
     => mediator.EventStreamToServerSentEvents<PriceChangedEvent>(context));
 ```
+
+### 8. API Client Generierung (Frontend)
+
+Nach Erstellen/Ändern eines Endpoints:
+
+1. API starten (muss unter `/openapi/v1.json` erreichbar sein)
+2. ApiClient-Projekt rebuilden → generiert HTTP Contracts automatisch via `MediatorHttp`
+3. Prüfen ob neuer Endpoint im generierten Client erscheint
+
+**Typisches Setup im ApiClient.csproj:**
+```xml
+<ItemGroup>
+  <MediatorHttp Include="ApiContracts"
+                Uri="http://localhost:PORT/openapi/v1.json"
+                Namespace="[ProjectName].Core.ApiClient.Generated"
+                ContractPostfix="HttpRequest"
+                GenerateJsonConverters="false"
+                Visible="false" />
+</ItemGroup>
+```
+
+> ⚠️ Build-Fehler im ApiClient = API läuft nicht oder falscher Port

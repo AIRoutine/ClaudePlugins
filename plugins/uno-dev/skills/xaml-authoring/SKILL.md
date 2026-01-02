@@ -21,3 +21,7 @@ Gestalte Page modular so das das Uno Region System hergenommen wird. Teile Page 
 ### 4. Bei Views/Pages: Responsive Design für alle Geräte?
 
 Frag dich: Funktioniert dieses Layout auf Phone, Tablet und Desktop? Wenn nein, mach es responsive.
+
+### 5. UITest-relevante Elemente brauchen eine AutomationId
+
+Setze auf jedem XAML-Element, das für UITests relevant ist, eine `AutomationProperties.AutomationId`. Verwende ein konsistentes Namensschema: `PageName_ElementTyp_Beschreibung` (z.B. `LoginPage_Button_Submit`, `SettingsPage_TextBox_Username`).
