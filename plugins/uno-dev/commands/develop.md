@@ -17,10 +17,9 @@ Entscheide: Braucht es Änderungen im...
 ## 3. Backend-Änderungen
 
 Falls Backend betroffen:
-- Braucht es einen neuen Handler?
-- Muss ein bestehender Handler aktualisiert werden?
-
-→ Falls ja: Nutze den **api-endpoint-authoring** Skill
+- Braucht es eine neue API-Library/Feature? → Nutze den **api-library-authoring** Skill
+- Braucht es einen neuen Handler? → Nutze den **api-endpoint-authoring** Skill
+- Muss ein bestehender Handler aktualisiert werden? → Nutze den **api-endpoint-authoring** Skill
 
 ## 4. Frontend: View/Page
 
