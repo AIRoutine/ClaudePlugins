@@ -16,8 +16,22 @@ $patch = [int]$versionParts[2]
 $newVersion = "$major.$($minor + 1).0"
 $json.version = $newVersion
 
-# Write back
-$json | ConvertTo-Json -Depth 10 | Set-Content $pluginJsonPath -Encoding UTF8
+# Write back without BOM
+$newJson = @"
+{
+  "name": "$($json.name)",
+  "description": "$($json.description)",
+  "version": "$newVersion",
+  "author": {
+    "name": "$($json.author.name)",
+    "url": "$($json.author.url)"
+  },
+  "repository": "$($json.repository)",
+  "license": "$($json.license)",
+  "keywords": $(($json.keywords | ConvertTo-Json -Compress))
+}
+"@
+[System.IO.File]::WriteAllText($pluginJsonPath, $newJson)
 
 Write-Host "Version bumped to $newVersion" -ForegroundColor Green
 
