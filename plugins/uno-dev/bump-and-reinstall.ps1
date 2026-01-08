@@ -1,0 +1,39 @@
+# Bump minor version, commit, push, and reinstall uno-dev plugin
+
+$pluginPath = $PSScriptRoot
+$pluginJsonPath = Join-Path $pluginPath ".claude-plugin\plugin.json"
+
+# Read and parse plugin.json
+$json = Get-Content $pluginJsonPath -Raw | ConvertFrom-Json
+
+# Parse current version
+$versionParts = $json.version -split '\.'
+$major = [int]$versionParts[0]
+$minor = [int]$versionParts[1]
+$patch = [int]$versionParts[2]
+
+# Bump minor version, reset patch
+$newVersion = "$major.$($minor + 1).0"
+$json.version = $newVersion
+
+# Write back
+$json | ConvertTo-Json -Depth 10 | Set-Content $pluginJsonPath -Encoding UTF8
+
+Write-Host "Version bumped to $newVersion" -ForegroundColor Green
+
+# Git operations
+Set-Location (Split-Path $pluginPath -Parent | Split-Path -Parent)
+git add .
+git commit -m "bump uno-dev to $newVersion"
+git push
+
+Write-Host "Committed and pushed" -ForegroundColor Green
+
+# Reinstall plugin
+Write-Host "Uninstalling uno-dev plugin..." -ForegroundColor Yellow
+claude plugins uninstall uno-dev
+
+Write-Host "Installing uno-dev plugin..." -ForegroundColor Yellow
+claude plugins install $pluginPath
+
+Write-Host "Done!" -ForegroundColor Green

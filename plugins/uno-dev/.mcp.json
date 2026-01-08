@@ -6,7 +6,7 @@
   "uno-app": {
     "type": "stdio",
     "command": "dotnet",
-    "args": ["dnx", "-y", "uno.devserver", "--mcp-app"]
+    "args": ["dnx", "--prerelease", "-y", "uno.devserver", "--mcp-app"]
   },
   "microsoft-learn": {
     "type": "http",
