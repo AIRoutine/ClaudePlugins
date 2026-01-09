@@ -5,7 +5,7 @@
   },
   "uno-app": {
     "type": "stdio",
-    "command": "uno.devserver",
+    "command": "uno-devserver",
     "args": ["--mcp-app"]
   },
   "microsoft-learn": {
