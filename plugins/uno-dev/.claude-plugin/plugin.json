@@ -1,12 +1,12 @@
 {
   "name": "uno-dev",
   "description": "Uno Platform development skills and configurations for cross-platform .NET apps",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": {
     "name": "Daniel",
     "url": "https://github.com/AIRoutine"
   },
   "repository": "AIRoutine/ClaudePlugins",
   "license": "MIT",
-  "keywords": ["uno-platform", "xaml", "dotnet", "cross-platform", "mvux", "winui"]
+  "keywords": ["uno-platform","xaml","dotnet","cross-platform","mvux","winui"]
 }

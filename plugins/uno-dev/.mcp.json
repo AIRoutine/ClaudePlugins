@@ -5,8 +5,8 @@
   },
   "uno-app": {
     "type": "stdio",
-    "command": "dotnet",
-    "args": ["dnx", "--prerelease", "-y", "uno.devserver", "--mcp-app"]
+    "command": "uno.devserver",
+    "args": ["--mcp-app"]
   },
   "microsoft-learn": {
     "type": "http",
