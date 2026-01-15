@@ -45,9 +45,9 @@ Write-Host "Committed and pushed" -ForegroundColor Green
 
 # Reinstall plugin
 Write-Host "Uninstalling uno-dev plugin..." -ForegroundColor Yellow
-claude plugins uninstall uno-dev
+claude plugin uninstall uno-dev
 
 Write-Host "Installing uno-dev plugin..." -ForegroundColor Yellow
-claude plugins install $pluginPath
+claude plugin install $pluginPath
 
 Write-Host "Done!" -ForegroundColor Green
