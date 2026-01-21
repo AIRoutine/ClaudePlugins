@@ -10,6 +10,11 @@
       "name": "uno-dev",
       "source": "./plugins/uno-dev",
       "description": "Uno Platform development skills for cross-platform .NET apps"
+    },
+    {
+      "name": "page-design-guide",
+      "source": "./plugins/page-design-guide",
+      "description": "Design guidance MCP server to help generate better, more modern web pages with best practices"
     }
   ]
 }

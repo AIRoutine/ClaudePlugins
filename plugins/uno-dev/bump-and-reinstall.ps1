@@ -43,11 +43,12 @@ git push
 
 Write-Host "Committed and pushed" -ForegroundColor Green
 
-# Reinstall plugin
-Write-Host "Uninstalling uno-dev plugin..." -ForegroundColor Yellow
-claude plugin uninstall uno-dev
+# Reinstall plugin using local marketplace
+Write-Host "Adding local marketplace..." -ForegroundColor Yellow
+$marketplacePath = Split-Path $pluginPath -Parent
+claude plugin marketplace add $marketplacePath 2>$null
 
 Write-Host "Installing uno-dev plugin..." -ForegroundColor Yellow
-claude plugin install $pluginPath
+claude plugin install uno-dev
 
 Write-Host "Done!" -ForegroundColor Green
