@@ -1,7 +1,0 @@
-{
-  "page-design-guide": {
-    "type": "stdio",
-    "command": "npx",
-    "args": ["-y", "page-design-guide-mcp"]
-  }
-}

@@ -21,7 +21,6 @@ Then install plugins:
 | Plugin | Description | Keywords |
 |--------|-------------|----------|
 | [uno-dev](plugins/uno-dev) | Uno Platform development skills for cross-platform .NET apps | `uno-platform`, `xaml`, `dotnet`, `cross-platform`, `mvux`, `winui` |
-| [page-design-guide](plugins/page-design-guide) | Design guidance MCP server to help generate better, more modern web pages with best practices | `design`, `web-design`, `ui`, `ux`, `accessibility`, `responsive-design` |
 
 ## Structure
 
